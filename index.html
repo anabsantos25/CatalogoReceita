@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Receitas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+<!-- CABEÇALHO -->
+    <header class="header fixed-top d-flex justify-content-between align-items-center p-3 text-white">
+
+        <div class="fw-bold fs-4">Receitas Fáceis</div>
+        
+        <nav>
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link" href="#">Tudo</a></li>
+                <li class="nav-item"><a class="nav-link" href="#doces">Doces</a></li>
+                <li class="nav-item"><a class="nav-link" href="#salgados">Salgados</a></li>
+                <li class="nav-item"><a class="nav-link" href="#bebidas">Bebidas</a></li>
+            </ul>
+          </nav>          
+    </header>
+
+<!-- BANNER -->
+    <section class="banner">
+        <img src="https://static.vecteezy.com/ti/fotos-gratis/p1/39070493-colagem-do-dietetico-pratos-e-saudavel-comida-uma-conjunto-do-pratos-dentro-pratos-bandeira-para-uma-comida-local-foto.jpg" class="img-fluid w-100 rounded-3 shadow" alt="Banner comidas">
+    </section>
+
+<!-- SEÇÕES DAS RECEITAS -->
+<div class="container mt-4">
+
+    <!-- TODAS -->
+
+    <div id="todas"></div>
+
+    <!-- DOCES -->
+    <section id="doces" class="categoria">
+    <h2>Receitas Doces</h2>
+    <div class="row">
+
+        <!-- RECEITA DE BRIGADEIRO -->
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="https://s2.glbimg.com/C8ktXGAQ1xU3f_ZyMnlZTWySSug=/e.glbimg.com/og/ed/f/original/2021/09/09/brigadeiro_divulgacao.png" class="card-img-top" alt="Brigadeiro">
+                    <div class="card-body">
+                        <h5 class="card-title">Brigadeiro</h5>
+                        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalBrigadeiro">
+                        Ver Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        <!-- RECEITA DE BOLO DE CHOCOLATE -->
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="https://www.receitasnestle.com.br/sites/default/files/srh_recipes/bbc6433c1c89829ad91c986a46dfb4bc.jpg" class="card-img-top" alt="Bolo de Chocolate">
+                    <div class="card-body">
+                        <h5 class="card-title">Bolo de Chocolate</h5>
+                        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalBoloChocolate">
+                        Ver Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SALGADOS -->
+    <section id="salgados" class="categoria">
+    <h2>Receitas Salgadas</h2>
+    <div class="row">
+        
+            <!-- RECEITA DE TORTA DE FRANGO -->
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="https://s2-receitas.glbimg.com/VMdPiNIVwwvtVxZddQmW5oydKUs=/0x0:1366x768/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2022/S/r/pZJK3BQR2eJR3Zi2nKPg/torta-salgada-de-frango-receita.jpg" class="card-img-top" alt="Torta de Frango">
+                    <div class="card-body">
+                        <h5 class="card-title">Torta de Frango</h5>
+                        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalTortaDeFrango">
+                        Ver Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        <!-- RECEITA DE MACARRÃO -->
+        <div class="col-md-6">
+            <div class="card">
+                <img src="https://www.minhareceita.com.br/app/uploads/2023/05/macarrao-com-calabresa.jpg" class="card-img-top" alt="Macarrão Simples">
+                <div class="card-body">
+                    <h5 class="card-title">Macarrão</h5>
+                        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalMacarrão">
+                        Ver Receita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BEBIDAS -->
+    <section id="bebidas" class="categoria">
+    <h2>Receitas de Bebidas</h2>
+    <div class="row">
+        <!-- LIMONADA -->
+        <div class="col-md-6">
+            <div class="card">
+                <img src="https://www.emporiumpax.com.br/wp-content/uploads/2024/01/receita-de-limonada-suica-de-Agua-com-gas.webp" class="card-img-top" alt="Limonada">
+                <div class="card-body">
+                    <h5 class="card-title">Limonada</h5>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalLimonada">
+                            Ver Receita  
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        <!-- CHOCOLATE QUENTE -->
+        <div class="col-md-6">
+            <div class="card">
+                <img src="https://recipesblob.oetker.com.br/assets/1c55aea556d94208b5f4ededb8921f98/1272x764/chocolate-quente-seo.webp" class="card-img-top" alt="Chocolate Quente">
+                <div class="card-body">
+                    <h5 class="card-title">Chocolate Quente</h5>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalChocolatequente">
+                            Ver Receita
+                        </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+<!-- Modal do Brigadeiro -->
+<div class="modal fade" id="modalBrigadeiro" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Receita de Brigadeiro</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <h6>Ingredientes:</h6>
+                <ul>
+                    <li>1 lata de leite condensado</li>
+                    <li>2 colheres de sopa de chocolate em pó</li>
+                    <li>1 colher de sopa de manteiga</li>
+                    <li>Chocolate granulado para decorar</li>
+                </ul>
+                <h6>Modo de Preparo:</h6>
+                <ol>
+                    <li>Misture todos os ingredientes em uma panela.</li>
+                    <li>Cozinhe em fogo médio, mexendo sempre, até desgrudar do fundo.</li>
+                    <li>Deixe esfriar, enrole e passe no granulado.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalBoloChocolate" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Receita de Bolo de Chocolate</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <h6>Ingredientes:</h6>
+                <ul>
+                    <li>1 xícara e meia de chá de açúcar</li>
+                    <li>Meia xícara de chá de óleo</li>
+                    <li>1 xícara de chá de chocolate em pó</li>
+                    <li>2 xícaras de chá de farinha de trigo</li>
+                    <li>1 colher de sopa de fermento em pó</li>
+                    <li>3 ovos</li>
+                </ul>
+                <h6>Modo de Preparo:</h6>
+                <ol>
+                    <li>Misture todos os ingredientes em uma bacia.</li>
+                    <li>Adicione o fermento por último.</li>
+                    <li>Asse a 180ºC por 40 minutos.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Torta de Frango -->
+<div class="modal fade" id="modalTortaDeFrango" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Receita de Torta de Frango</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <h6>Ingredientes: Recheio</h6>
+                <ul>
+                    <li>2 colheres de sopa de margarina</li>
+                    <li>Meia lata de milho</li>
+                    <li>Meio quilo de peito de frango cozido e desfiado temperado a gosto</li>
+                </ul>
+<h6>Ingredientes: Massa</h6>
+<ul>
+        <li>1 xícara de chá de leite</li>
+        <li>2 ovos</li>
+        <li>2 xícaras de chá de farinha de trigo</li>   
+</ul>
+                <h6>Modo de Preparo: </h6>
+                <ol>
+                    <li>Coloque todos os ingredientes do recheio em uma panela e refogue.</li>
+                    <li>Bata todos os ingredientes da massa no liquidificador.</li>
+                    <li>Em uma travessa, coloque primeiro a massa, depois o recheio e cubra novamente com a massa.</li>
+                    <li>Asse em 180ºC por 30 minutos.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Macarrao -->
+<div class="modal fade" id="modalMacarrão" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Receita de Macarrão</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <h6>Ingredientes:</h6>
+                <ul>
+                    <li>1 pacote de macarrão espaguete</li>
+                    <li>4 saches de molho de tomate</li>
+                    <li>500 gramas de carne moida</li>
+                </ul>
+                <h6>Modo de Preparo: </h6>
+                <ol>
+                    <li>Cozinhe a massa por 9 minutos em água fervente, depois escoe.</li>
+                    <li>Refogue a carne com tempero a gosto em uma panela separada.</li>
+                    <li>Despeje os saches de molho na mesma panela.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Limonada -->
+<div class="modal fade" id="modalLimonada" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Receita de Limonada</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <h6>Ingredientes:</h6>
+                <ul>
+                    <li>1 limão</li>
+                    <li>1 litro de água gelada</li>
+                    <li>Açúcar ou adoçante a gosto</li>
+                </ul>
+                <h6>Modo de Preparo: </h6>
+                <ol>
+                    <li>Corte as extremidades do limão, coloque o limão com casca no liquidificador.</li>
+                    <li>Bata até ralar o limão com a casca, adicionando toda água gelada.</li>
+                    <li>Adoce com açúcar ou adoçante, bata mais um pouco e coe.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Chocolate Quente -->
+<div class="modal fade" id="modalChocolatequente" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Receita de Chocolate Quente</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <h6>Ingredientes:</h6>
+                <ul>
+                    <li>2 xícaras chá de leite</li>
+                    <li>3 colheres sopa de chocolate em pó</li>
+                    <li>1 colher sopa de amido de milho</li>
+                    <li>4 colheres sopa de açúcar</li>
+                    <li>1 canela em pau</li>
+                    <li>1 caixinha de creme de leite</li>
+                </ul>
+                <h6>Modo de Preparo: </h6>
+                <ol>
+                    <li>Junte os ingredientes no liquidificador e bata.</li>
+                    <li>Ferva e adicione a canela em pau por último.</li>
+                    <li>Retire a canela e sirva quente.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h6></h6>
+
+<!-- Rodapé - Seção "Sugerir Receita" -->
+<footer class="footer text-center text-white p-4">
+
+    <section id="sugerirReceita" class="container mt-5">
+    <h2 class="text-center mb-4">Sugerir uma Nova Receita</h2>
+
+        <div class="accordion" id="accordionSugerirReceita">
+            <!-- Informações Básicas -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingInformacoesBasicas">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInformacoesBasicas" aria-expanded="true" aria-controls="collapseInformacoesBasicas">
+                        Informações Básicas
+                    </button>
+                </h2>
+                <div id="collapseInformacoesBasicas" class="accordion-collapse collapse show" aria-labelledby="headingInformacoesBasicas" data-bs-parent="#accordionSugerirReceita">
+                    <div class="accordion-body">
+                        <div class="mb-3">
+                            <label for="nomeReceita" class="form-label">Nome da Receita</label>
+                            <input type="text" class="form-control" id="nomeReceita" name="nomeReceita" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="categoriaReceita" class="form-label">Categoria</label>
+                            <select class="form-select" id="categoriaReceita" name="categoriaReceita" required>
+                                <option value="doces">Doces</option>
+                                <option value="salgados">Salgados</option>
+                                <option value="bebidas">Bebidas</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ingredientes -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingIngredientes">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIngredientes" aria-expanded="false" aria-controls="collapseIngredientes">
+                        Ingredientes
+                    </button>
+                </h2>
+                <div id="collapseIngredientes" class="accordion-collapse collapse" aria-labelledby="headingIngredientes" data-bs-parent="#accordionSugerirReceita">
+                    <div class="accordion-body">
+                        <div class="mb-3">
+                            <label for="ingredientes" class="form-label">Ingredientes</label>
+                            <textarea class="form-control" id="ingredientes" name="ingredientes" rows="3" required></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modo de Preparo -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingModoPreparo">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseModoPreparo" aria-expanded="false" aria-controls="collapseModoPreparo">
+                        Modo de Preparo
+                    </button>
+                </h2>
+                <div id="collapseModoPreparo" class="accordion-collapse collapse" aria-labelledby="headingModoPreparo" data-bs-parent="#accordionSugerirReceita">
+                    <div class="accordion-body">
+                        <div class="mb-3">
+                            <label for="modoPreparo" class="form-label">Descreva o modo de preparo</label>
+                            <textarea class="form-control" id="modoPreparo" name="modoPreparo" rows="5" required></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagem -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingImagem">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseImagem" aria-expanded="false" aria-controls="collapseImagem">
+                        Imagem da Receita
+                    </button>
+                </h2>
+                <div id="collapseImagem" class="accordion-collapse collapse" aria-labelledby="headingImagem" data-bs-parent="#accordionSugerirReceita">
+                    <div class="accordion-body">
+                        <div class="mb-3">
+                            <label for="imagemReceita" class="form-label">Adicione uma imagem para a receita</label>
+                            <input type="file" class="form-control" id="imagemReceita" name="imagemReceita">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalEnviar">
+                    Enviar Receita
+                </button>                
+            </div>
+
+            <!-- Modal de Sucesso -->
+            <div class="modal fade" id="modalEnviar" tabindex="-1" aria-labelledby="modalsucesso" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content-sucesso rounded-3">
+                        <div class="modal-body text-center">
+                            <p class="font-weight-bold fs-4">Sua receita foi enviada com sucesso!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
